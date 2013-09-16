@@ -5,7 +5,7 @@ public class Player_TP_Controller : MonoBehaviour {
     //fields 
     public static CharacterController controller;
     public static Player_TP_Controller instance; 
-	// Use this for initialization
+	
 	void Awake() 
     {
         instance = this;
@@ -15,7 +15,7 @@ public class Player_TP_Controller : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () 
-    {
+        {
         InputMiscare();
         Player_TP_Motor.instance.UpdateMotor();
 	}
